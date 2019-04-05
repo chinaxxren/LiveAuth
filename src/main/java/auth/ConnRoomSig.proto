@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_outer_classname = "ConnRoomSig";
+
+message Conn_Room_Sig {
+    uint32 uint32_groupcode = 1; //source group num
+    string str_third_account = 2; //source account id
+
+    uint32 uint32_conned_groupcode = 3; //dest group num
+    string str_conned_third_account = 4; //dest account id
+
+    uint32 uint32_create_time = 5; //create time
+    uint32 uint32_expire_time = 6; //expire time
+}
